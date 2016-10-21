@@ -5,9 +5,9 @@
         .module('app')
         .directive('countdown', countdown);
 
-    countdown.$inject = ['$window'];
+    countdown.$inject = [];
     
-    function countdown ($window) {
+    function countdown () {
         // Usage:
         //     <countdown></countdown>
         // Creates:
