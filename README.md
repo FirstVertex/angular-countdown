@@ -5,8 +5,8 @@ Simple countdown control for AngularJs
 
 [Codepen: Countdown demo](http://codepen.io/HugeHugh/pen/BLvwzr)
 
-<p data-height="265" data-theme-id="0" data-slug-hash="BLvwzr" data-default-tab="result" data-user="HugeHugh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/HugeHugh/pen/BLvwzr/">AngularJs Countdown Directive</a> by Hugh Anderson (<a href="http://codepen.io/HugeHugh">@HugeHugh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height='265' scrolling='no' src='//codepen.io/HugeHugh/embed/BLvwzr/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/HugeHugh/pen/BLvwzr/'>AngularJs Countdown Directive</a> by Hugh Anderson (<a href='http://codepen.io/HugeHugh'>@HugeHugh</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ## How to Use
 
