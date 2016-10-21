@@ -1,0 +1,34 @@
+﻿<div class="countdown clearfix" ng-class="vm.countdownId">
+    <h2 class="text-uppercase" ng-bind="vm.countdownTitleDisplay"></h2>
+    <div ng-hide="vm.hasDate">
+        <h1 class="coming-soon">Coming Soon</h1>
+    </div>
+    <div class="countdown-row-con" ng-show="vm.hasDate">
+        <div class="row row-colons">
+            <div class="col-xs-4" ng-if="vm.days">
+                <h1 class="well well-lg">
+                    {{vm.days}}
+                </h1>
+                <h4>Days</h4>
+            </div>
+            <div class="col-xs-4">
+                <h1 class="well well-lg">
+                    {{vm.hours}}
+                </h1>
+                <h4>Hours</h4>
+            </div>
+            <div class="col-xs-4">
+                <h1 class="well well-lg">
+                    {{vm.minutes}}
+                </h1>
+                <h4>Mins</h4>
+            </div>
+            <div class="col-xs-4" ng-if="!vm.days">
+                <h1 class="well well-lg">
+                    {{vm.seconds}}
+                </h1>
+                <h4 ng-if="!vm.days">Secs</h4>
+            </div>
+        </div>
+    </div>
+</div>

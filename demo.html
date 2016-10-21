@@ -1,0 +1,70 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Angular Countdown Demo</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <!-- REQUIRED 1/3 - AngularJS Core -->
+    <script src="lib/angular.min.js"></script>
+    
+    <!-- DEMO APP INIT -->
+    <script>
+        (function() {
+            angular.module('app', []);
+            angular.module('app').controller('demo', demo);
+            function demo() {
+                var vm = this;
+                vm.tomorrow = new Date();
+                vm.tomorrow.setHours(24,0,0,0); // midnignt
+
+                vm.xmas = new Date();
+                vm.xmas.setMonth(11);
+                vm.xmas.setDate(25);
+                vm.xmas.setHours(0,0,0,0); // midnignt
+            }
+        })();
+    </script>
+
+    <!-- REQUIRED 2/3 - styles for the image crop component -->
+    <link rel="stylesheet" href="dist/countdown.css">
+
+    <!-- REQUIRED 3/3 - the countdown directive -->
+    <script src="dist/countdown.controller.js"></script>
+    <script src="dist/countdown.directive.js"></script>
+
+    <style>
+        /* Styles for this demo page */
+        body {
+            font: 12px Arial;
+            background: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body ng-controller="demo as vm">
+    <div class="countdown-con countdown-xs">
+        <countdown countdown-id="cd1" countdown-title="Days Until Christmas" target-date="vm.xmas"></countdown>
+    </div>
+
+    <hr />
+
+    <div class="countdown-con countdown-sm orange">
+        <countdown countdown-id="cd2" countdown-title="Hours Until Tomorrow" target-date="vm.tomorrow"></countdown>
+    </div>
+
+    <hr />
+
+    <div class="countdown-con countdown-md">
+        <countdown countdown-id="cd3" countdown-title="Days Until Next Year" target-date="'2017-01-01'"></countdown>
+    </div>
+
+    <hr />
+
+    <div class="countdown-con countdown-lg orange">
+        <countdown countdown-id="cd4" countdown-title="Days Until 2018" target-date="'2018-01-01'"></countdown>
+    </div>
+</body>
+</html>

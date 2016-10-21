@@ -1,0 +1,71 @@
+﻿.countdown-con {
+    text-align: center;
+    font-size: 10px;
+}
+.countdown-xs {
+    font-size: 9px;
+}
+.countdown-sm {
+    font-size: 11px;
+}
+.countdown-md {
+    font-size: 14px;
+}
+.countdown-lg {
+    font-size: 20px;
+}
+.countdown .well {
+    padding: 0;
+    display: inline-block;
+    width: 1.8em;
+    line-height: 1.6em;
+    border: 3px solid #54ABAE;
+    box-shadow: none;
+    background: white;
+    margin: 3px auto;
+    border-radius: 0;
+}
+.countdown h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.countdown h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.countdown h4 {
+    font-size: 1.4em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    color: #54ABAE;
+}
+.countdown .row {
+    white-space: nowrap;
+}
+.countdown .row-colons .col-xs-4:not(:last-child):after {
+    content: ':';
+    position: absolute;
+    font-size: 4.7em;
+    right: -0.17em;
+    top: -0.12em;
+    font-weight: normal;
+    color: #54ABAE;
+}
+.countdown [class^="col-"] {
+    float: none;
+    display: inline-block;
+    width: auto;
+    padding: 0 8px;
+    position: relative;
+}
+.countdown-con.orange .well {
+    border-color: #FF9E15;
+}
+.countdown-con.orange h4 {
+    color: #FF9E15;
+}
+.countdown-con.orange .row-colons .col-xs-4:not(:last-child):after {
+    color: #FF9E15;
+}
